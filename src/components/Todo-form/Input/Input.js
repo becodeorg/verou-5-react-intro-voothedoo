@@ -1,9 +1,7 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './Input.css';
 
-function Input() {
-  const todoNameRef = useRef();
-
+function Input({ todoNameRef }) {
   return (
     <input ref={todoNameRef} className='add-todo' type="text" placeholder='Add a todo' />
   );
