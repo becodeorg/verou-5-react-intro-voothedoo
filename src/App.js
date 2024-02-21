@@ -1,12 +1,14 @@
+import Todos from "./components/Todo-list/Todos/Todos";
 import TodoForm from "./components/Todo-form/TodoForm";
 import './App.css';
-import Todo from "./components/Todo-list/Todos/Todo";
+import { useState } from "react";
 
 function App() {
+  const [todos, setTodos] = useState(['todo1', 'todo2']);
   return (
     <div className="App">
       <TodoForm />
-      <Todo />
+      <Todos todos={todos} />
     </div>
   );
 }

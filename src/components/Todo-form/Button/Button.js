@@ -3,8 +3,12 @@ import './Button.css';
 
 
 function Button() {
+  const handleClick = () => {
+    console.log('Clicked!');
+  };
+
   return (
-    <button className='btn add-todo'>Add Todo</button>
+    <button onClick={handleClick} className='btn add-todo'>Add Todo</button>
   );
 }
 
