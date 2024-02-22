@@ -1,5 +1,13 @@
+import "./assets/styles/App.css";
+import { Header, Main } from "./components";
+
 function App() {
-  return <h1>New React Project</h1>;
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
 }
 
 export default App;
